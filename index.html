@@ -3,143 +3,202 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Crewleave — Friday off in WhatsApp. The record your payroll needs.</title>
-  <meta name="description" content="Deskless teams book leave in WhatsApp. Managers approve in the thread. Crewleave keeps the leave and holiday-pay record for six years. £49 a month per company." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,500;1,500&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --ink: #1a1814;
-      --paper: #f3efe6;
-      --rule: #d8d1c2;
-      --accent: #c45c26;
-      --muted: #5c574c;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      font-family: "IBM Plex Sans", system-ui, sans-serif;
-      background: var(--paper);
-      color: var(--ink);
-      line-height: 1.45;
-    }
-    a { color: var(--ink); }
-    header, main, footer { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
-    header { padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: baseline; }
-    .mark { font-weight: 600; letter-spacing: -0.02em; }
-    .price-pill { color: var(--muted); font-size: 0.9rem; }
-    h1 {
-      font-family: "IBM Plex Serif", Georgia, serif;
-      font-weight: 500;
-      font-size: clamp(2rem, 6vw, 3.15rem);
-      line-height: 1.12;
-      letter-spacing: -0.03em;
-      margin: 2.5rem 0 1rem;
-    }
-    .lede { font-size: 1.15rem; max-width: 38rem; color: var(--ink); }
-    .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.75rem 0 3rem; }
-    .btn {
-      display: inline-block;
-      background: var(--ink);
-      color: var(--paper);
-      text-decoration: none;
-      padding: 0.8rem 1.1rem;
-      font-weight: 500;
-      border-radius: 2px;
-    }
-    .btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
-    section { padding: 0 0 2.75rem; border-top: 1px solid var(--rule); }
-    h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; margin: 1.75rem 0 1rem; color: var(--muted); }
-    ol.steps { padding-left: 1.2rem; margin: 0; }
-    ol.steps li { margin: 0.6rem 0; }
-    ul.plain { list-style: none; padding: 0; margin: 0; }
-    ul.plain li { padding: 0.55rem 0; border-bottom: 1px solid var(--rule); }
-    .who { display: grid; gap: 0.75rem; }
-    .who p { margin: 0; padding: 0.9rem 0; border-bottom: 1px solid var(--rule); }
-    .price {
-      font-family: "IBM Plex Serif", Georgia, serif;
-      font-size: 2.4rem;
-      margin: 0.25rem 0 0.4rem;
-    }
-    .price span { font-size: 1rem; font-family: "IBM Plex Sans", sans-serif; color: var(--muted); }
-    details { border-bottom: 1px solid var(--rule); padding: 0.85rem 0; }
-    details summary { cursor: pointer; font-weight: 500; }
-    details p { margin: 0.5rem 0 0; color: var(--muted); }
-    footer { padding: 2rem 1.25rem 3rem; color: var(--muted); font-size: 0.85rem; }
-    footer p { max-width: 38rem; }
-  </style>
+  <title>Crewleave — Friday off in the WhatsApp you already use.</title>
+  <meta name="description" content="Staff write “off Friday” in the group. You tap yes. No app. No login for them. We keep the six-year record behind it. First month free. Then £49 a month, whole company." />
+  <meta name="theme-color" content="#f4f3ef" />
+  <link rel="canonical" href="https://crewleave.co.uk/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Crewleave" />
+  <meta property="og:title" content="Crewleave — Friday off in the WhatsApp you already use." />
+  <meta property="og:description" content="Staff write “off Friday” in the group. You tap yes. No app. No login for them. We keep the six-year record behind it." />
+  <meta property="og:url" content="https://crewleave.co.uk/" />
+  <meta property="og:image" content="https://crewleave.co.uk/og.png" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Crewleave — Friday off in the WhatsApp you already use." />
+  <meta name="twitter:description" content="Staff write “off Friday” in the group. You tap yes. No app. No login for them. We keep the six-year record behind it." />
+  <meta name="twitter:image" content="https://crewleave.co.uk/og.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="mark">Crewleave</div>
-    <div class="price-pill">£49 / month</div>
-  </header>
-  <main>
-    <h1>Friday off in the WhatsApp you already use.</h1>
-    <p class="lede">Staff message the group. You tap yes. We keep the leave and holiday-pay record for six years — the one payroll and the Fair Work Agency will ask for.</p>
-    <div class="cta-row">
-      <a class="btn" href="mailto:hello@crewleave.co.uk?subject=Start%20Crewleave">Start on WhatsApp</a>
-      <a class="btn ghost" href="mailto:hello@crewleave.co.uk?subject=Sample%20record">Get a sample record</a>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="mark" href="/">Crewleave</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/" aria-current="page">Home</a><span class="sep" aria-hidden="true"> · </span>
+        <a href="/faq.html">FAQ</a><span class="sep" aria-hidden="true"> · </span>
+        <a href="/contact.html">Contact</a><span class="sep" aria-hidden="true"> · </span>
+        <a href="/privacy.html">Privacy</a>
+      </nav>
+      <p class="price-tag">£49 / month</p>
     </div>
+  </header>
 
-    <section>
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li>We add a Crewleave number to your crew WhatsApp group.</li>
-        <li>Someone writes “off Friday”. You reply yes or no in the same thread. No app. No login for staff.</li>
-        <li>We file the request, the approval, and the leave year against that person. You can export the six-year record for payroll or your accountant.</li>
-      </ol>
-    </section>
+  <main id="main" class="page-main">
+    <div class="wrap">
+      <section class="hero">
+        <div>
+          <h1>Friday off in the WhatsApp you already use.</h1>
+          <p class="lede">Staff write “off Friday” in the group. You tap yes. No app. No login for them.</p>
+          <p class="lede">We keep the six-year record behind it.</p>
+          <a class="cta" href="mailto:hello@crewleave.co.uk">Email hello@crewleave.co.uk to get set up.</a>
+          <p class="cta-note">We’ll add the number that week.</p>
+        </div>
+        <figure class="phone" aria-label="Example group thread only">
+          <div class="phone-screen">
+            <div class="phone-bar">
+              <div class="phone-title">Kitchen — week</div>
+              <div class="phone-sub">Group thread • example</div>
+            </div>
+            <div class="thread">
+              <p class="bubble in">J. Patel: off Friday 12 Jun</p>
+              <p class="bubble out">You: yes</p>
+              <p class="bubble in">S. Reid: off Friday 14 Aug</p>
+              <p class="bubble out">You: no — rota short</p>
+            </div>
+          </div>
+        </figure>
+      </section>
 
-    <section>
-      <h2>Who it’s for</h2>
-      <div class="who">
+      <section class="section" aria-labelledby="record-title">
+        <div class="record">
+          <div class="record-head">
+            <h2 id="record-title">Record — Northside Cleaning Ltd</h2>
+            <p class="record-sub">Leave year 6 Apr 2026 to 5 Apr 2027</p>
+          </div>
+          <table class="record-table">
+            <thead>
+              <tr>
+                <th scope="col">Person</th>
+                <th scope="col">Dates</th>
+                <th scope="col">Approved</th>
+                <th scope="col">Days</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Person">J. Patel</td>
+                <td data-label="Dates">off Friday 12 Jun</td>
+                <td data-label="Approved"><span class="pill yes">yes, same thread</span></td>
+                <td data-label="Days">1 day, 12 Jun 2026</td>
+              </tr>
+              <tr>
+                <td data-label="Person">M. Ojo</td>
+                <td data-label="Dates">off Mon–Tue 20–21 Jul</td>
+                <td data-label="Approved"><span class="pill yes">yes</span></td>
+                <td data-label="Days">2 days</td>
+              </tr>
+              <tr>
+                <td data-label="Person">S. Reid</td>
+                <td data-label="Dates">off Friday 14 Aug</td>
+                <td data-label="Approved"><span class="pill no">no, rota short</span></td>
+                <td data-label="Days">not taken</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="record-note">Holiday-pay figures are typed in by you or payroll. Example: J. Patel, 12 Jun, £92.00. You export this as CSV. We keep it for six years.</p>
+      </section>
+
+      <section class="section" aria-labelledby="csv-title">
+        <div class="csv">
+          <h2 id="csv-title">The export payroll would get</h2>
+          <p class="csv-kicker">Example figures only.</p>
+          <pre>name,dates,approved,days,holiday_pay
+J. Patel,12 Jun 2026,yes,1,92.00
+M. Ojo,20-21 Jul 2026,yes,2,</pre>
+          <p class="csv-caption">Example only. Not a real company.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="how-title">
+        <h2 id="how-title">How it works</h2>
+        <ol class="steps">
+          <li><span class="num" aria-hidden="true">1</span><span>You email us. We add a Crewleave number to the crew WhatsApp group that week.</span></li>
+          <li><span class="num" aria-hidden="true">2</span><span>Someone writes “off Friday”. You reply yes or no in the same thread. No app. No login for staff.</span></li>
+          <li><span class="num" aria-hidden="true">3</span><span>We file the request, the approval, and the leave year against that person. You export it for payroll or your accountant.</span></li>
+        </ol>
+      </section>
+
+      <section class="section" aria-labelledby="who-title">
+        <h2 id="who-title">Who it’s for</h2>
         <p>Commercial cleaners, pubs, kitchens, and facilities crews who already run the week in a WhatsApp group.</p>
-        <p>Not for office teams with email. Timetastic already won that. Not construction.</p>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <h2>What you get</h2>
-      <ul class="plain">
-        <li>Leave booked where the work already happens</li>
-        <li>A wallchart you can trust, because the WhatsApp thread is the record</li>
-        <li>Six-year archive of leave taken and holiday-pay figures you (or payroll) enter</li>
-        <li>CSV export for Xero, Sage, or your bureau</li>
-        <li>£49 per company per month. Not per head. Cancel anytime.</li>
-      </ul>
-    </section>
+      <section class="section" aria-labelledby="why-title">
+        <h2 id="why-title">Why Crewleave</h2>
+        <div class="why-grid">
+          <article class="why-card">
+            <span class="why-n">01</span>
+            <p>Leave is booked in the WhatsApp group you already run — not in an app staff will ignore.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-n">02</span>
+            <p>You reply yes or no in the same thread. No login for them.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-n">03</span>
+            <p>The six-year record sits behind that reply. Export it when payroll or your accountant asks.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-n">04</span>
+            <p>One price for the whole company. Not a seat each time someone joins.</p>
+          </article>
+        </div>
+      </section>
 
-    <section>
-      <h2>Price</h2>
-      <p class="price">£49 <span>/ month, whole company</span></p>
-      <p>Part-timers don’t blow up the bill. First month you can leave if the crew won’t use it.</p>
-    </section>
+      <section class="section" aria-labelledby="get-title">
+        <h2 id="get-title">What you get</h2>
+        <ul class="get">
+          <li>Leave booked in the WhatsApp group you already run</li>
+          <li>You tap yes or no in the same thread. Staff never log in</li>
+          <li>The six-year record behind that thread — leave taken, plus holiday-pay figures you or payroll enter</li>
+          <li>CSV export for payroll or your accountant</li>
+          <li>£49 a month, whole company, not per head</li>
+          <li>One bill for the whole company. A bigger crew does not cost more.</li>
+          <li>Payroll gets a CSV instead of rebuilding the month from the chat.</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Questions</h2>
-      <details>
-        <summary>Do you calculate holiday pay for us?</summary>
-        <p>No. You or your payroll already do that. We store the figure and the leave days so you can show the record for six years. We are not your HR advisor and we don’t give employment-law advice.</p>
-      </details>
-      <details>
-        <summary>Is this a legal requirement?</summary>
-        <p>From 6 April 2026 UK employers must keep adequate annual-leave and holiday-pay records for six years. A spreadsheet can be enough. Crewleave is the version that gets filled in because it lives in WhatsApp.</p>
-      </details>
-      <details>
-        <summary>What about sick days?</summary>
-        <p>Holiday only in this version. Keep sickness off the group thread.</p>
-      </details>
-      <details>
-        <summary>Who is this email from?</summary>
-        <p>Crewleave. If you don’t want another message, reply STOP and we won’t write again.</p>
-      </details>
-    </section>
+      <section class="section price-block">
+        <h2>Price</h2>
+        <p class="amount">£49 <span>/ month, whole company</span></p>
+        <p>First month free. Then £49. Part-timers don’t change the bill. Cancel anytime.</p>
+      </section>
+
+      <section class="section faq" aria-labelledby="q-title">
+        <h2 id="q-title">Questions</h2>
+        <details>
+          <summary>Do you calculate holiday pay?</summary>
+          <p>No. You or payroll already do. We store the figure and the days. We are not your HR advisor.</p>
+        </details>
+        <details>
+          <summary>Is a spreadsheet enough?</summary>
+          <p>Yes. You can keep records in any format you reasonably think fit. Crewleave is for when that spreadsheet stays empty.</p>
+        </details>
+        <details>
+          <summary>What about sick days?</summary>
+          <p>Holiday only. Keep sickness off this thread.</p>
+        </details>
+        <details>
+          <summary>What’s the six-year record?</summary>
+          <p>UK employers now have to keep adequate annual-leave and holiday-pay records for six years. A spreadsheet is allowed. This is the version that gets filled in, because it lives in the group.</p>
+        </details>
+        <details>
+          <summary>Is the first month free?</summary>
+          <p>Yes. Use it with a live crew. Then £49 a month. Cancel anytime — including in that first month.</p>
+        </details>
+      </section>
+    </div>
   </main>
-  <footer>
-    <p>Crewleave is a record-keeping tool. The employer stays responsible for holiday entitlement and pay. We don’t act as your competent person or legal advisor.</p>
-    <p>UK data. We’ll send a processing agreement before the first live crew. hello@crewleave.co.uk</p>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="mailto:hello@crewleave.co.uk">hello@crewleave.co.uk</a> — Crewleave is a leave record. We don’t give employment-law advice.</p>
+    </div>
   </footer>
 </body>
 </html>
