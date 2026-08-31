@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Crewleave — Friday off in the WhatsApp you already use.</title>
-  <meta name="description" content="Staff write “off Friday”. You tap yes. No app. £49 / month, whole company. First month free. We keep the six-year record behind it." />
+  <meta name="description" content="Staff write “off Friday”. You tap yes. We post who’s off this week in the group. £49 / month, whole company. First month free." />
   <meta name="theme-color" content="#ffffff" />
   <link rel="canonical" href="https://crewleave.co.uk/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -12,13 +12,13 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Crewleave" />
   <meta property="og:title" content="Crewleave — Friday off in the WhatsApp you already use." />
-  <meta property="og:description" content="Staff write “off Friday”. You tap yes. No app. £49 / month, whole company. First month free." />
+  <meta property="og:description" content="Staff write “off Friday”. You tap yes. We post who’s off this week in the group. £49 / month, whole company. First month free." />
   <meta property="og:url" content="https://crewleave.co.uk/" />
   <meta property="og:image" content="https://crewleave.co.uk/og.png" />
   <meta property="og:locale" content="en_GB" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Crewleave — Friday off in the WhatsApp you already use." />
-  <meta name="twitter:description" content="Staff write “off Friday”. You tap yes. No app. £49 / month, whole company. First month free." />
+  <meta name="twitter:description" content="Staff write “off Friday”. You tap yes. We post who’s off this week in the group. £49 / month, whole company. First month free." />
   <meta name="twitter:image" content="https://crewleave.co.uk/og.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -42,37 +42,77 @@
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <h1>Friday off in the WhatsApp you already use.</h1>
-          <p class="lede">Staff write “off Friday”. You tap yes. No app.</p>
+          <p class="lede">Staff write “off Friday”. You tap yes. We post who’s off this week in the group.</p>
           <p class="offer">£49 / month, whole company. First month free.</p>
           <a class="cta" href="mailto:hello@crewleave.co.uk">Email hello@crewleave.co.uk to get set up.</a>
           <p class="cta-note">We’ll add the number that week.</p>
         </div>
 
-        <figure class="device" aria-label="Example group thread only">
-          <div class="device-frame">
-            <div class="device-ear" aria-hidden="true"></div>
-            <div class="device-screen">
-              <div class="device-status" aria-hidden="true">
-                <span>09:41</span>
-                <span class="device-status-icons">
-                  <i></i><i></i><i></i>
-                </span>
+        <div class="hero-visuals">
+          <figure class="device" aria-label="Example group thread only">
+            <div class="device-frame">
+              <div class="device-ear" aria-hidden="true"></div>
+              <div class="device-screen">
+                <div class="device-status" aria-hidden="true">
+                  <span>09:41</span>
+                  <span class="device-status-icons">
+                    <i></i><i></i><i></i>
+                  </span>
+                </div>
+                <div class="chat-bar">
+                  <div class="chat-title">Kitchen — week</div>
+                  <div class="chat-sub">Group thread</div>
+                </div>
+                <div class="thread">
+                  <p class="bubble in"><span class="who">J. Patel</span>off Friday 12 Jun</p>
+                  <p class="bubble out"><span class="who">You</span>yes</p>
+                  <p class="bubble in"><span class="who">S. Reid</span>off Friday 14 Aug</p>
+                  <p class="bubble out"><span class="who">You</span>no — rota short</p>
+                  <p class="bubble post"><span class="who">Crewleave</span>This week — J. Patel, Friday 12 Jun</p>
+                </div>
               </div>
-              <div class="chat-bar">
-                <div class="chat-title">Kitchen — week</div>
-                <div class="chat-sub">Group thread</div>
-              </div>
-              <div class="thread">
-                <p class="bubble in"><span class="who">J. Patel</span>off Friday 12 Jun</p>
-                <p class="bubble out"><span class="who">You</span>yes</p>
-                <p class="bubble in"><span class="who">S. Reid</span>off Friday 14 Aug</p>
-                <p class="bubble out"><span class="who">You</span>no — rota short</p>
-              </div>
+              <div class="device-home" aria-hidden="true"></div>
             </div>
-            <div class="device-home" aria-hidden="true"></div>
-          </div>
-          <figcaption>Example only. Not a real company.</figcaption>
-        </figure>
+          </figure>
+
+          <figure class="week" aria-label="Example of who’s off this week">
+            <div class="week-card">
+              <h2 class="week-title">Off this week — J. Patel, Friday.</h2>
+              <ol class="week-strip">
+                <li>
+                  <span class="dow">Mon</span>
+                  <span class="dom">8</span>
+                </li>
+                <li>
+                  <span class="dow">Tue</span>
+                  <span class="dom">9</span>
+                </li>
+                <li>
+                  <span class="dow">Wed</span>
+                  <span class="dom">10</span>
+                </li>
+                <li>
+                  <span class="dow">Thu</span>
+                  <span class="dom">11</span>
+                </li>
+                <li class="is-off">
+                  <span class="dow">Fri</span>
+                  <span class="dom">12</span>
+                  <span class="off-name">J. Patel</span>
+                </li>
+                <li>
+                  <span class="dow">Sat</span>
+                  <span class="dom">13</span>
+                </li>
+                <li>
+                  <span class="dow">Sun</span>
+                  <span class="dom">14</span>
+                </li>
+              </ol>
+            </div>
+            <figcaption>Example only. Not a real company.</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -127,7 +167,7 @@
           </li>
           <li>
             <span class="num" aria-hidden="true">3</span>
-            <p>We file it. You export it for payroll or your accountant.</p>
+            <p>We post who’s off this week in the group. You get a leave calendar of who’s off. Export for payroll.</p>
           </li>
         </ol>
       </div>
@@ -150,11 +190,11 @@
           </article>
           <article class="why-card">
             <span class="why-n">2</span>
-            <p>You tap yes. Staff never log in.</p>
+            <p>You tap yes. We post who’s off this week in the same group.</p>
           </article>
           <article class="why-card">
             <span class="why-n">3</span>
-            <p>Payroll gets a CSV, not a chat to rebuild.</p>
+            <p>You get a leave calendar of who’s off — not who’s working.</p>
           </article>
           <article class="why-card">
             <span class="why-n">4</span>

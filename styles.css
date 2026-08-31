@@ -190,7 +190,7 @@ a:hover { text-decoration-thickness: 2px; }
   font-size: clamp(1.2rem, 2vw, 1.45rem);
   line-height: 1.35;
   letter-spacing: -0.02em;
-  max-width: 22rem;
+  max-width: 28rem;
 }
 
 .offer {
@@ -342,6 +342,94 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 .bubble.out .who { color: rgba(255, 255, 255, 0.78); }
+
+.bubble.post {
+  align-self: stretch;
+  max-width: 100%;
+  background: #dce8e1;
+  color: var(--yes-ink);
+  border-radius: 0.75rem;
+}
+
+.bubble.post .who { color: var(--accent); }
+
+.hero-visuals {
+  display: grid;
+  gap: 1.25rem;
+  justify-items: center;
+  width: 100%;
+}
+
+.week {
+  margin: 0;
+  width: min(100%, 26rem);
+}
+
+.week-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem 1rem 0.95rem;
+  box-shadow: 0 8px 28px rgba(17, 17, 17, 0.05);
+}
+
+.week-title {
+  margin: 0 0 0.85rem;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.week-strip {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+
+.week-strip li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  min-height: 4.4rem;
+  padding: 0.4rem 0.15rem 0.45rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.week-strip .dow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+
+.week-strip .dom {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.week-strip .off-name {
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--yes-ink);
+}
+
+.week-strip li.is-off {
+  background: var(--yes-bg);
+}
+
+.week figcaption {
+  margin: 0.7rem 0 0;
+  text-align: center;
+  color: var(--soft);
+  font-size: 0.95rem;
+}
 
 .device-home {
   width: 7.5rem;
@@ -661,14 +749,19 @@ a:hover { text-decoration-thickness: 2px; }
   }
 
   .hero-grid {
-    grid-template-columns: minmax(0, 1fr) 27rem;
-    gap: 3.75rem;
+    grid-template-columns: minmax(0, 1fr) 24.5rem;
+    gap: 3.25rem;
     align-items: center;
   }
 
-  .device { width: 27rem; justify-self: end; }
+  .hero-visuals {
+    justify-items: stretch;
+    gap: 1rem;
+  }
 
-  .device-screen { min-height: 31.5rem; }
+  .device { width: 24.5rem; justify-self: end; }
+
+  .week { width: 24.5rem; justify-self: end; }
 
   .steps {
     grid-template-columns: repeat(3, 1fr);
@@ -754,7 +847,9 @@ a:hover { text-decoration-thickness: 2px; }
   .hero { padding: 1rem 0 2rem; }
   .hero-grid { gap: 1.1rem; }
   .hero-copy h1 { max-width: none; }
+  .lede { max-width: none; }
   .device { width: min(100%, 22.25rem); }
+  .week { width: min(100%, 22.25rem); }
   .device-frame { padding: 0.45rem 0.5rem 0.5rem; border-radius: 2rem; }
   .device-ear {
     height: 0.55rem;
