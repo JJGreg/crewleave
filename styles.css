@@ -82,7 +82,7 @@ a:hover { text-decoration-thickness: 2px; }
 .skip:focus { top: 0.75rem; }
 
 .wrap {
-  width: min(1120px, calc(100% - 2.5rem));
+  width: min(1200px, calc(100% - 2.5rem));
   margin-inline: auto;
 }
 
@@ -165,6 +165,9 @@ a:hover { text-decoration-thickness: 2px; }
 
 .hero {
   padding: 2.25rem 0 3.25rem;
+  background:
+    radial-gradient(900px 420px at 88% 12%, rgba(27, 71, 56, 0.06), transparent 60%),
+    #fff;
 }
 
 .hero-grid {
@@ -174,12 +177,12 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 .hero-copy h1 {
-  font-size: clamp(2.35rem, 6.4vw, 4.15rem);
-  line-height: 1.04;
-  letter-spacing: -0.042em;
+  font-size: clamp(2.2rem, 6vw, 4.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
   font-weight: 700;
   margin: 0 0 1.15rem;
-  max-width: 14ch;
+  max-width: 11.5em;
 }
 
 .lede {
@@ -229,7 +232,7 @@ a:hover { text-decoration-thickness: 2px; }
 .device {
   margin: 0;
   justify-self: center;
-  width: min(100%, 23.5rem);
+  width: min(100%, 24rem);
 }
 
 .device-frame {
@@ -252,7 +255,6 @@ a:hover { text-decoration-thickness: 2px; }
   background: var(--thread);
   border-radius: 1.55rem;
   overflow: hidden;
-  min-height: 28.5rem;
 }
 
 .device-status {
@@ -655,18 +657,18 @@ a:hover { text-decoration-thickness: 2px; }
 
 @media (min-width: 900px) {
   .hero {
-    padding: 3.5rem 0 4.5rem;
+    padding: 3.25rem 0 4.75rem;
   }
 
   .hero-grid {
-    grid-template-columns: minmax(0, 1fr) 24.5rem;
-    gap: 4.5rem;
+    grid-template-columns: minmax(0, 1fr) 27rem;
+    gap: 3.75rem;
     align-items: center;
   }
 
-  .device { width: 24.5rem; justify-self: end; }
+  .device { width: 27rem; justify-self: end; }
 
-  .device-screen { min-height: 32rem; }
+  .device-screen { min-height: 31.5rem; }
 
   .steps {
     grid-template-columns: repeat(3, 1fr);
@@ -688,7 +690,7 @@ a:hover { text-decoration-thickness: 2px; }
     align-items: center;
   }
 
-  .hero-grid { width: min(1120px, calc(100% - 2.5rem)); }
+  .hero-grid { width: min(1200px, calc(100% - 2.5rem)); }
 }
 
 @media (max-width: 899px) {
@@ -724,18 +726,50 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 @media (max-width: 640px) {
-  .wrap { width: min(1120px, calc(100% - 1.75rem)); }
-  .header-inner { min-height: 0; }
-  .site-nav { margin-left: 0; width: 100%; order: 3; }
-  .price-pill { margin-left: auto; }
+  .wrap { width: min(1200px, calc(100% - 1.5rem)); }
+  .header-inner {
+    min-height: 3.4rem;
+    flex-wrap: nowrap;
+    gap: 0.45rem 0.55rem;
+    padding: 0.45rem 0;
+  }
+  .mark { font-size: 1.05rem; }
+  .site-nav {
+    margin-left: auto;
+    flex-wrap: nowrap;
+  }
+  .site-nav a {
+    padding: 0.4rem 0.22rem;
+    font-size: 0.9rem;
+    min-height: 40px;
+  }
+  .price-pill {
+    min-height: 2rem;
+    padding: 0.28rem 0.65rem;
+    font-size: 0.88rem;
+  }
   .cta { width: 100%; }
-  .hero { padding: 1.6rem 0 2.4rem; }
-  .hero-copy h1 { max-width: none; }
-  .device { width: min(100%, 22.75rem); }
-  .device-screen { min-height: 26.5rem; }
+  .hero { padding: 1.15rem 0 2rem; }
+  .hero-grid { gap: 1.35rem; }
+  .hero-copy { display: contents; }
+  .hero-copy h1 {
+    order: 1;
+    max-width: none;
+    margin-bottom: 0.7rem;
+  }
+  .lede { order: 2; }
+  .offer { order: 3; margin-top: 0.65rem; }
+  .device { order: 4; width: min(100%, 22.25rem); }
+  .cta { order: 5; margin-top: 0.15rem; }
+  .cta-note { order: 6; }
   .band { padding: 3.1rem 0; }
   .price-band { padding: 3.4rem 0; }
   .price-inner h2 span { display: block; margin: 0.45rem 0 0; }
+}
+
+@media (max-width: 360px) {
+  .header-inner { flex-wrap: wrap; }
+  .site-nav { width: 100%; margin-left: 0; order: 3; }
 }
 
 @media (prefers-reduced-motion: reduce) {
