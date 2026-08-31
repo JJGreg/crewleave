@@ -752,9 +752,19 @@ a:hover { text-decoration-thickness: 2px; }
   }
   .cta { width: 100%; margin-top: 1.15rem; }
   .hero { padding: 1rem 0 2rem; }
-  .hero-grid { gap: 1.5rem; }
+  .hero-grid { gap: 1.1rem; }
   .hero-copy h1 { max-width: none; }
   .device { width: min(100%, 22.25rem); }
+  .device-frame { padding: 0.45rem 0.5rem 0.5rem; border-radius: 2rem; }
+  .device-ear {
+    height: 0.55rem;
+    margin: 0.05rem auto 0.3rem;
+  }
+  .device-status { padding: 0.35rem 0.85rem 0.05rem; }
+  .chat-bar { padding: 0.45rem 0.85rem 0.5rem; }
+  .thread { gap: 0.45rem; padding: 0.65rem 0.7rem 0.75rem; }
+  .device-home { margin: 0.35rem auto 0.05rem; }
+  .device figcaption { margin-top: 0.6rem; }
   .band { padding: 3.1rem 0; }
   .price-band { padding: 3.4rem 0; }
   .price-inner h2 span { display: block; margin: 0.45rem 0 0; }
