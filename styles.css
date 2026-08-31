@@ -750,38 +750,14 @@ a:hover { text-decoration-thickness: 2px; }
     padding: 0.28rem 0.65rem;
     font-size: 0.9rem;
   }
-  .cta { width: 100%; }
-  .hero { padding: 1.15rem 0 2rem; }
-  .hero-grid { gap: 1.35rem; }
-  .hero-copy { display: contents; }
-  .hero-copy h1 {
-    order: 1;
-    max-width: none;
-    margin-bottom: 0.7rem;
-  }
-  .lede { order: 2; }
-  .offer { order: 3; margin-top: 0.65rem; }
-  .device { order: 4; width: min(100%, 22.25rem); }
-  .cta { order: 5; margin-top: 0.15rem; }
-  .cta-note { order: 6; }
+  .cta { width: 100%; margin-top: 1.15rem; }
+  .hero { padding: 1rem 0 2rem; }
+  .hero-grid { gap: 1.5rem; }
+  .hero-copy h1 { max-width: none; }
+  .device { width: min(100%, 22.25rem); }
   .band { padding: 3.1rem 0; }
   .price-band { padding: 3.4rem 0; }
   .price-inner h2 span { display: block; margin: 0.45rem 0 0; }
-}
-
-@media (max-width: 640px) and (max-height: 720px) {
-  .hero { padding: 0.75rem 0 1.4rem; }
-  .hero-grid { gap: 0.85rem; }
-  .hero-copy h1 {
-    font-size: 1.85rem;
-    margin-bottom: 0.45rem;
-  }
-  .lede { font-size: 1.05rem; }
-  .offer { font-size: 1.05rem; margin-top: 0.4rem; }
-  .cta { min-height: 48px; margin-top: 0; }
-  .device-ear { height: 0.7rem; margin-bottom: 0.35rem; }
-  .thread { gap: 0.5rem; padding: 0.75rem 0.7rem 0.9rem; }
-  .bubble { font-size: 0.95rem; padding: 0.5rem 0.7rem 0.55rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
